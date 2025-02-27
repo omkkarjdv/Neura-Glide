@@ -78,6 +78,14 @@
             margin: 50px auto;
             text-align: left;
         }
+        .intro-image {
+            max-width: 70%; /* Ensures the image is responsive */
+            height: auto;
+            border-radius: 8px; /* Optional: Rounds the corners */
+            display: block;
+            margin: 0 auto 15px; /* Centers image & adds space below */
+            margin-top: 50px;
+        }
         .threshold-title {
             text-align: center;
             font-size: 24px;
@@ -172,28 +180,8 @@
             <button onclick="location.href='handmotion.html'">Hand Motion</button>
         </div>
 
-        <div class="threshold-box">
-            <div class="threshold-title">Threshold Values</div>
-            <div class="threshold-item">
-                <span class="threshold-label">BPM:</span>
-                <span class="threshold-value">90</span>
-            </div>
-            <div class="threshold-item">
-                <span class="threshold-label">SpO2:</span>
-                <span class="threshold-value">95%</span>
-            </div>
-            <div class="threshold-item">
-                <span class="threshold-label">Body Temperature:</span>
-                <span class="threshold-value">35°C</span>
-            </div>
-            <div class="threshold-item">
-                <span class="threshold-label">Gyroscope:</span>
-                <span class="threshold-value">2</span>
-            </div>
-            <div class="threshold-item">
-                <span class="threshold-label">Acceleration:</span>
-                <span class="threshold-value">0</span>
-            </div>
+        <div class="intro-image">
+            <img src="photos\WhatsApp Image 2025-02-28 at 12.22.13 AM.jpeg" alt="Description" class="intro-image">
         </div>
     </div>
 
