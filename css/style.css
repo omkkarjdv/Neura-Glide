@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    background-image: url('/photos/17973908.jpg');
+    color: white;
+    padding: 20px;
+}
+h2 {
+    color: white;
+}
+.navbar {
+    background: #0288d1;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+.navbar h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+.nav-links {
+    display: flex;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+.nav-links a:hover {
+    background: #0277bd;
+    transform: scale(1.1);
+}
+.content {
+    padding-top: 80px;
+    text-align: center;
+}
+.info-block {
+    display: block;
+    background: #333;
+    padding: 30px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 00.2s);
+    transition: transform 0.3s, background-color 0.3s;
+    font-weight: bold;
+    color: white;
+}
+.info-block:nth-child(odd) {
+    background: #444;
+}
+.info-block:nth-child(even) {
+    background: #555;
+}
+.info-block:hover {
+    transform: scale(1.1);
+    background-color: #777;
+}
+.info-block {
+    background: #883939 !important;
+}
+
+.in-info-block {
+    display: block;
+    background: #333;
+    padding: 30px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+    font-weight: bold;
+    color: white;
+}
+.in-info-block:nth-child(odd) {
+    background: #444;
+}
+.in-info-block:nth-child(even) {
+    background: #555;
+}
+.in-info-block:hover {
+    transform: scale(1.1);
+    background-color: #777;
+}
+.in-info-block {
+    background: #2b2929 !important;
+}
+iframe {
+    display: block;
+    margin: 10px auto;
+}
+canvas {
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+}

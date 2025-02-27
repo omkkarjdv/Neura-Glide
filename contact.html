@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Neura Glide</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('/photos/17973908.jpg');
+        }
+        .navbar {
+            background: #0288d1;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+            padding-right: 20px;
+        }
+        .nav-links {
+            display: flex;
+            margin-left: auto;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .nav-links a:hover {
+            background: #0277bd;
+            transform: scale(1.1);
+        }
+        .content {
+            padding-top: 80px;
+            text-align: center;
+        }
+        .info-block {
+            display: block;
+            background: #ffffff;
+            padding: 100px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+            font-weight: bold;
+            color: #333;
+        }
+        .info-block:nth-child(odd) {
+            background: #b3e5fc;
+        }
+        .info-block:nth-child(even) {
+            background: #81d4fa;
+        }
+        .info-block:hover {
+            transform: scale(1.05);
+            background-color: #4fc3f7;
+        }
+        .highlight-block {
+            background: #4fc3f7 !important;
+        }
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        iframe {
+            display: block;
+            margin: 10px auto;
+        }
+        canvas {
+            margin-top: 20px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .contact-container {
+            margin-top: 80px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container h2 {
+            color: #0288d1;
+        }
+        .contact-container p {
+            font-size: 16px;
+        }
+        .contact-container a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+        .back-button {
+            background: #0288d1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background: #0277bd;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Neura Glide</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+        <p><strong>Email:</strong> <a href="mailto:support@neuraglide.com">support@neuraglide.com</a></p>
+        <p><strong>Phone:</strong> +91 9960887967</p>
+        <p><strong>Address:</strong> ABC Hospital, Panchavati, Nashik-422003</p>
+        <button class="back-button" onclick="history.back()">Back</button>
+    </div>
+</body>
+</html>

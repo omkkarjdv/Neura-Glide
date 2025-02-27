@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neura Glide</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('/photos/17973908.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .navbar {
+            background: #0288d1;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .navbar h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .nav-links a:hover {
+            background: #0277bd;
+            transform: scale(1.1);
+        }
+        .content {
+            padding-top: 100px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .button-container button {
+            background: #0d0d0e;
+            color: white;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.3s;
+        }
+        .button-container button:hover {
+            transform: scale(1.1);
+        }
+        .threshold-box {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 50px auto;
+            text-align: left;
+        }
+        .threshold-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #0288d1;
+        }
+        .threshold-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .threshold-label {
+            font-weight: bold;
+            color: #555;
+        }
+        .threshold-value {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        .intro-box {
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .intro-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .intro-text {
+            line-height: 1.6;
+            color: #444;
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-container h2 {
+            color: #0288d1;
+        }
+        .contact-container p {
+            font-size: 16px;
+        }
+        .contact-container a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+            .button-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Neura Glide</h1>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="button-container">
+            <button onclick="location.href='web.html'">Start Monitoring</button>
+            <button onclick="location.href='handmotion.html'">Hand Motion</button>
+        </div>
+
+        <div class="threshold-box">
+            <div class="threshold-title">Threshold Values</div>
+            <div class="threshold-item">
+                <span class="threshold-label">BPM:</span>
+                <span class="threshold-value">90</span>
+            </div>
+            <div class="threshold-item">
+                <span class="threshold-label">SpO2:</span>
+                <span class="threshold-value">95%</span>
+            </div>
+            <div class="threshold-item">
+                <span class="threshold-label">Body Temperature:</span>
+                <span class="threshold-value">35°C</span>
+            </div>
+            <div class="threshold-item">
+                <span class="threshold-label">Gyroscope:</span>
+                <span class="threshold-value">2</span>
+            </div>
+            <div class="threshold-item">
+                <span class="threshold-label">Acceleration:</span>
+                <span class="threshold-value">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-box">
+        <div class="intro-title">Introduction</div>
+        <div class="intro-text">
+            Parkinson's disease is a progressive neurological disorder that affects movement, balance, and coordination. 
+            Early detection is crucial for better management and improved quality of life. Below, we present threshold 
+            values based on gyroscope and accelerometer readings, SpO2 levels, and blood pressure, which can indicate 
+            pre-Parkinson's symptoms and different stages of Parkinson's disease. These values help in assessing motor 
+            function, stability, and overall health trends, providing valuable insights for early intervention and monitoring.
+        </div>
+    </div>
+    
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+        <p><strong>Email:</strong> <a href="mailto:support@neuraglide.com">support@neuraglide.com</a></p>
+        <p><strong>Phone:</strong> +91 9960887967</p>
+        <p><strong>Address:</strong> ABC Hospital, Panchavati, Nashik-422003</p>
+    </div>
+</body>
+</html>
